@@ -13,6 +13,7 @@ int find2ndLargest(int size, int arr[]){
 
     for(int i = 0; i < size; i++){
         if(arr[i] > largest){
+            secondLargest = largest;
             largest = arr[i];
         }
         else if(arr[i]>secondLargest && arr[i] != largest){
