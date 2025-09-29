@@ -7,16 +7,16 @@
 using namespace std;
 
 int find2ndLargest(int size, int arr[]){
+    // finding largest
     int largest = arr[0];
-
-        for(int i; i > size; i++){
+        for(int i=0; i < size; i++){
             if(arr[i]>largest){
                 largest = arr[i];
+                return largest;
             }
         }
+        return -1;
     }
-    return -1;
-}
 
 int main(){
     int arr[] = { 2, 4, 6, 3, 1};
