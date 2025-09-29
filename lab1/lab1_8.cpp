@@ -18,7 +18,6 @@ int find(int size, int arr[], int toFind){
 int main(){
     int toFind;
     int arr[] = { 1, 2, 3, 4, 5};
-    int size = sizeof(arr) / sizeof(arr[0]);
 
     cout << "Enter element to find: ";
     cin >> toFind;
