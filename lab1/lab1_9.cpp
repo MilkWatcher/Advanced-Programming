@@ -1,6 +1,6 @@
 // Student Name: Reanielle Broas
 // Student ID: C00296913
-// Lab 8 Find and return the second largest element in an array of positive integer
+// Lab 9 Find and return the second largest element in an array of positive integer
 // returns -1 if it can’t find one.
 
 #include <iostream>
@@ -27,8 +27,8 @@ int main(){
     int arr[] = { 2, 4, 6, 3, 7};
     int size = sizeof(arr) / sizeof(arr[0]);
 
-    int index = find2ndLargest(size, arr);
-    cout << "Second Largest Number: " << index << endl;
+    int answer = find2ndLargest(size, arr);
+    cout << "Second Largest Number: " << answer << endl;
 
     return 0;
 }
