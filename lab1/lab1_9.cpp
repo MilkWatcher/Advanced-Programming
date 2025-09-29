@@ -7,14 +7,22 @@
 using namespace std;
 
 int find2ndLargest(int size, int arr[]){
+    int largest = arr[0];
+
+        for(int i; i > size; i++){
+            if(arr[i]>largest){
+                largest = arr[i];
+            }
+        }
+    }
     return -1;
 }
 
 int main(){
-    int arr[] = { 1, 2, 3, 4, 5};
+    int arr[] = { 2, 4, 6, 3, 1};
     int size = sizeof(arr) / sizeof(arr[0]);
 
-    int index = find(5, arr, toFind);
+    int index = find2ndLargest(size, arr);
     cout << "Index: " << index << endl;
 
     return 0;
