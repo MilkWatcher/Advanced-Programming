@@ -15,10 +15,16 @@
 using namespace std;
 
 bool insertElement( int size, int count, int arr[],
-                    int elementToInsert, int insertIndex){
-    
-    
-    return false;
+                    int elementToInsert, int index){
+    if(count >= size || index < 0 || index > count ){
+        return false;
+    }
+    for(int i = count; i > index; i--){
+        arr[i] = arr[i -1 ];
+    }
+    arr[index] = elementToInsert;
+    count ++;
+    return true;
 }
 
 int main(){
@@ -28,9 +34,9 @@ int main(){
     
     insertElement(size, count, arr, 4, 5);
 
+    cout << "New Array: ";
     for(int i = 0; i < size; i++) {
         cout << arr[i] << " ";
     }
-    cout << "New Array: " << arr[i] << " ";
     return 0;
 }
